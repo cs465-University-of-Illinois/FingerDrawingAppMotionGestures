@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FingerDrawingApp</string>
+    <string name="erase_view_menu_item_text">Erase drawing</string>
+</resources>

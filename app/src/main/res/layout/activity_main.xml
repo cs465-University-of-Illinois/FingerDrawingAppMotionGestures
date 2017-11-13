@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/toolbar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:titleTextAppearance="@style/ToolbarTitleTextAppearance"
+        android:background="@color/charcoal"
+        android:title="@string/app_name" />
+
+    <edu.illinois.cs465.fingerdrawingappmotiongestures.DrawingView
+       android:id="@+id/drawing_view"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:layout_gravity="fill"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/stroke_color_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="BLACK"/>
+
+        <Button
+            android:id="@+id/stroke_width_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="SMALL"/>
+    </LinearLayout>
+
+</LinearLayout>
